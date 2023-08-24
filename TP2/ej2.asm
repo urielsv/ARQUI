@@ -30,7 +30,7 @@ _toUpper:
                         cmp     byte [ebx], 'z'         ; me fijo que sea menor que 'z'
                         jg      next                    
 
-                        sub     byte [ebx], 'A' - 'a'   ; paso a mayuscula
+                        sub     byte [ebx], 'a' - 'A'   ; paso a mayuscula
                 next:
                         inc     ebx                     ; habria que modificar esp ???
                         jnz     convert
