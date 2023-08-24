@@ -44,6 +44,6 @@ convert_loop:
 section .data
 num dd 12345           ; Integer to be converted to string
 ; Sus? Onda habrian null terminated values antes de mi string.
-str_buf db 20 dup(0)   ; Buffer to store the string (with '0's)
+str_buf db 20    ; Buffer to store the string (with '0's)
 str_len equ $ - str_buf; Length of the string
 
